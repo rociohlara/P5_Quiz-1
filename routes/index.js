@@ -10,4 +10,8 @@ router.get('/credits', function(req, res, next) {
   res.render('credits', { title: 'Creditos' });
 });
 
+router.get('/quizzes', function(req, res, next) {
+  res.render('quizzes', { title: 'Quizzes' });
+});
+
 module.exports = router;
