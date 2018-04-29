@@ -3,7 +3,8 @@ const Sequelize = require('sequelize');
 const options = {	logging: false, operatorsAliases: false};
 const sequelize = new Sequelize("sqlite:quizzes.sqlite", options);
 
-const quiz = sequelize.define(	//defino el modelo de datos
+//const quiz = 
+sequelize.define(	//defino el modelo de datos
 	'quiz',
 	{ question: {
 		type: Sequelize.STRING,
