@@ -10,11 +10,12 @@
     	<ol>
     		<% var quizzes = array %>
     		<% var i = 0 %>
-    		<% for (i=0; i < quizzes.length; i++){ %>
+    		<% for (i; i < quizzes.length; i++){ %>
     		<%		<li> 
-    		<%=			quizzes[i].question%> : <%=quizzes[i].answer%>
+    		<%=			quizzes[i].question %> : <%= quizzes[i].answer %>
     		<%		</li>%>
-    		<%}%>
+    		<% } %>
     	</ol>
+    </div>
   </body>
 </html>
