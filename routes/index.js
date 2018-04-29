@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-const models = require('../models/index');
+const {models} = require('../models/index');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -12,7 +12,7 @@ router.get('/credits', function(req, res, next) {
 });
 
 router.get('/quizzes', function(req, res, next) {
-  sequelize.models.findAll()
+  models.quiz.findAll()
 	.then(quiz => {
 		res.render ('quizzes', {array: quiz});
 
