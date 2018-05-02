@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Lista de Quizzes</title>		<!--<%= title %>-->
+    <title>Lista de Quizzes</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
@@ -11,9 +11,9 @@
     		<% var quizzes = array %>
     		<% var i = 0 %>
     		<% for (i; i < quizzes.length; i++){ %>
-    		<%		<li> 
-    		<%=			quizzes[i].question %> : <%= quizzes[i].answer %>
-    		<%		</li>%>
+    		<li>
+    			Pregunta numero <%=quizzes[i].id%>. <%=quizzes[i].question %> : <%= quizzes[i].answer %>
+    		</li>
     		<% } %>
     	</ol>
     </div>

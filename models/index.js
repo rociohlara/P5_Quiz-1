@@ -3,7 +3,7 @@ const Sequelize = require('sequelize');
 const options = {	logging: false, operatorsAliases: false};
 const sequelize = new Sequelize("sqlite:quizzes.sqlite", options);
 
-//const quiz = 
+const quiz = 
 sequelize.define(	//defino el modelo de datos
 	'quiz',
 	{ question: {
@@ -28,7 +28,7 @@ sequelize.sync().then(() => sequelize.models.quiz.count()).then((count) => {	//s
 			}
 })
 .catch( err => {
-	console.log(error);
+	console.log(err);
 });
 
 module.exports = sequelize;
